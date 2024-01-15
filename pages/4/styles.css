@@ -1,0 +1,18 @@
+.class1 {
+    background-color: #c1a8f0; /* Цвет фона для class1 */
+}
+
+.class2 {
+    background-color: #dda96f; /* Цвет фона для class2 */
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#rand {
+    margin-top: 20px;
+}
+p{
+    margin: 0;
+}

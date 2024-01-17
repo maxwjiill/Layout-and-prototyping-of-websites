@@ -68,6 +68,12 @@ header {
 	font-size:35px;
 }
 
+.menu{
+	position: relative;
+	bottom:35px;
+	margin-left:40%;
+}
+
 .carcas{
 	width:auto;
 	height: 590px;
@@ -76,68 +82,37 @@ header {
 	background-attachment:fixed;
 	background-position:center;
 	background-position:top;
+	text-align: center;
+}
+
+.carcas h1{
+	padding-top:500px;
+	color:white;
+	text-shadow: 3px 3px 4px black;
+	font-size:40px;
 }
 
 main{
 	width:auto;
 	height:auto;
-	background:brown;
+	background:white;
 	margin: 0 auto;
+	text-align: center;
+	width: 1200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 20px;
 }
 
-.menu{
-	position: relative;
-	bottom:35px;
-	margin-left:40%;
+main p {
+	padding-top: 10px;
+	padding-bottom: 5px;
 }
 
-a{
-	text-decoration:none;
-	color:#7d7b7b;
-	padding-right:20px;
-	font: bold italic 110%;
-	font-size:18px;
-}
-h1{
-	padding-left: 30%;
-	padding-top:500px;
-	padding-bottom:50px;
-	color:white;
-	text-shadow: 3px 3px 4px black;
-	font-size:40px;
-}
-h2{
-	padding-top:50px;
-	padding-left:400px;
-	padding-bottom:60px;
-	color:black;
-	font-size:30px;
-}
-.bodyMenu{
-	margin: 0 auto;
-}
-#bodyMenu{
-	color:black;
-	font-size:30px;
-	padding-left: 120px;
-}
-#bodyMenuG{
-	color:black;
-	font-size:30px;
-	padding-left: 105px;
-}
-#bodyMenuGl{
-	color:black;
-	font-size:30px;
-	padding-left: 285px;
-}
-
-#imgMenuIcon{
-	margin-left: 280px;
-	margin-top: 20px;
-}
-.imgMenuIcon{
-	margin-right: 70px;
+main h2 {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-weight: bold;
 }
 
 hr{
@@ -146,62 +121,37 @@ hr{
 	color: #e1dfdf;
 	margin-top:50px;
 }
-.news{
-	padding-top:70px;
-	padding-left:170px;
-}
-p{
-	padding-bottom:60px;
-	margin-left:300px;
-	width:720px;
-}
-h3{
-	font-size:23px;
-	margin-left:300px;
-}
-#imgNews1{
-	position:absolute;
-}
-#imgNews2{
-	position:absolute;
-	margin-top:10px;
-}
-#imgNews3{
-	position:absolute;
+
+#imgNews{
+	width: 40%;
 	margin-top:20px;
+	margin-bottom:20px;
 }
-.text{
-	margin:0 auto;
-	text-align:center;
-}
+
 .sliderImg{
 	height:600px;
 	width:850px;
 }
 
-
 footer {
-	height: 258px;
-	margin:0 auto;
+	height: 200px;
+	margin: 0 auto;
 	background:url(../image/footer.jpg) no-repeat;
 	background-size:100% 100%;
 	background-position:center;
 	background-position:bottom;
 }
-.footerCopy{
+
+.footerText{
 	font-size:18px;
 	margin-top:10px;
 	color:#848282;
 	font-family:"Zapf Chancery", cursive;
-	margin-left:80px;
-}
-.footerBlock{
-	padding-left:40%;
-	padding-top:60px;
 }
 
-.imgFooterIcon{
-	margin-left:3px;
+.footerBlock{
+	text-align: center;
+	padding-top:60px;
 }
 
 ul {
@@ -210,25 +160,30 @@ ul {
     padding: 0;
     list-style: none;
 }
+
 ul:after {
     display: block;
     content: ' ';
     clear: both;
     float: none;
 }
+
 ul.menu > li {
     float: left;
     position: relative;
 }
+
 ul.menu > li > a {
     display: block;
     padding: 10px;
     color: #766c6c;
     text-decoration: none;
 }
+
 ul.menu > li > a:hover {
     color: black;
 }
+
 ul.submenu {
     display: none;
     position: absolute;
@@ -237,9 +192,11 @@ ul.submenu {
     left: 0;
     background-color: white;
 }
+
 ul.submenu > li {
     display: block;
 }
+
 ul.submenu > li > a {
     display: block;
     padding: 10px;
@@ -247,69 +204,50 @@ ul.submenu > li > a {
     background-color:white;
     text-decoration: none;
 }
+
 ul.submenu > li > a:hover {
     text-decoration:none;
 	color: black;
 }
+
 ul.menu > li:hover > ul.submenu {
     display: block;
 }
 
-.main>p{
-	margin:0;
-	padding:0;
-	padding-left:100px;
-}
-
 #page1-1{
-	position:absolute;
-	margin-left:900px;
+	/* position:absolute; */
+	/* margin-left:900px; */
 	width:400px;
 	height:250px;
 }
 #page1-2{
-	position:absolute;
-	margin-left:900px;
 	width:400px;
 	height:250px;
 }
+
 #glPar{
 	padding-bottom:20px;
 }
+
 #glPar2{
 	padding-bottom:260px;
 }
+
 #glDisk{
 	padding-top:100px;
 	padding-bottom:30px;
 }
+
 #neGlDisk{
 	padding-bottom:260px;
 }
+
 #crDisk{
 	padding-bottom:30px;
 }
+
 #glText{
 	padding-bottom:260px;
-}
-#nazvan{
-	margin-left:520px;
-	color:gray;
-}
-audio{
-margin:0 10%;
-width:50%;
-background-color:#7d7b7b;
-}
-.audioo{
-margin:10px 10%;
-font-size:20px;
-color:black;
-}
-
-#albom1{
-	position:absolute;
-	margin-left:900px;
 }
 
 #slider {
@@ -467,7 +405,7 @@ label, a{
 	border-radius:4px;
 	border: 4px solid #e8e8e7;
 }
-video{
+iframe{
 	margin:20px 25%;
 	width:50%;
 	background-color:#7d7b7b;

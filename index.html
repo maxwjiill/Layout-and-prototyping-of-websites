@@ -1,39 +1,81 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Метелкин М.А.</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Метелкин М.А.</title>
 </head>
+
 <body>
-  <header>
-    <h1 class="headerTitle">Сайт для сдачи работ по предмету "Верстка и прототипирование сайтов"</h1>
-  </header>
-  <main>
-    <div class="logo">
-      <div class="logo-shape">
-        <div class="triangle"></div>
-        <div class="rectangle"></div>
-      </div>
-    </div>
-    <hr>
-    <h2 class="h2Title">Лабораторные работы</h2>
-    <nav class="links">
-        <a href="pages\2\2d_task.html">2 задание</a>
-        <a href="pages\3\3d_task.html">3 задание</a>
-        <a href="pages\4\4d_task.html">4 задание</a>
-    </nav>
-    <h2 class="h2Title">Остальное</h2>
-    <nav class="links">
-        <a href="pages\course_work.html">Курсовая работа</a>
-    </nav>
-    <br>
-    <br>
-    <img src="images\politeh.jpg" width="850">
-  </main>
-  <footer>
-    <hr>
-    <p>Метелкин Максим Александрович. Группа з5130903/10301</p>
-  </footer>
+	<header>
+		<div class="container">
+	    	<div class="header">
+				<input class="nav-burger__checkbox" type="checkbox" id="burger">
+				<label class="nav-burger" for="burger">Меню</label>
+
+				<nav class="nav">
+					<a class="nav__item" href="index.html">Главная</a>
+					<a class="nav__item" href="pages/biography.html">Биография</a>
+					<a class="nav__item" href="pages/page3.html">Разбор текста</a>
+					<a class="nav__item" href="pages/page4.html">Слайдер</a>
+				</nav>
+	    	</div>
+		</div>
+
+		<div class="logo">Хаски</div>
+
+		<ul class="menu">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="pages/biography.html">Биография</a></li>
+			<li><a href="#">Разбор текста</a>
+				<ul class="submenu">
+					<li><a href="pages/page3-1.html">Панелька</a></li>
+					<li><a href="pages/page3-2.html">Черным-черно</a></li>
+				</ul>
+			</li>
+			<li><a href="pages/page4.html">Фотографии</a></li>
+			<li><a href="#">Задания</a>
+				<ul class="submenu">
+					<li><a href="pages/2/2d_task.html">Задание 2</a></li>
+					<li><a href="pages/3/3d_task.html">Задание 3</a></li>
+					<li><a href="pages/4/4d_task.html">Задание 4</a></li>
+					<li><a href="#">Задание 5</a></li>
+				</ul>
+			</li>
+		</ul>
+	</header>
+
+	<div class="carcas">
+		<h1>ДОБРО ПОЖАЛОВАТЬ К ХАСКИ</h1>
+	</div>
+
+	<hr>
+
+	<main>
+		<div class=news>
+			<img src="image/news1.png" id="imgNews" alt="Хаски">
+			<a href=#><h3>Хаски выпустил клип на трэк “Иуда”</h3></a>
+			<p>В этом видео панельная эстетика спальных районов переплетается с динамичными кадрами во всевозможных локациях. При просмотре этой визуализации чувствуешь себя будто бы перенесенным в другой мир. Хаски показывает зрителям реальную жизнь, не освещенную огнями софитов и не спрятанную за красивыми словами.</p>
+			<img src="image/news2.png" id="imgNews" alt="Хаски">
+			<a href=#><h3>Вышел новый клип  “Иуда”</h3></a>
+			<p>Хаски снова радует нас самобытной работой, в которой он раскрывает пороки общества, обнажая индустрию наркоторговли. Кадры жестокости проносятся перед глазами, показывая людей такими, какими они являются на самом деле.</p>
+			<img src="image/news3.png" id="imgNews" alt="Хаски">
+			<a href=#><h3>Разбор трэка “Панелька”</h3></a>
+			<p>Песня рассказывает о жизни мужчины с момента его зачатия до момента его средних лет, когда он обзавёлся семьёй и детьми.
+			Тот факт, что человек родившийся в “панельке” повторяет “как по трафарету” путь своего отца, символизирует о замкнутом круге серости и быта, из которого не каждый может вырваться (по-крайней мере главному персонажу песни это не удалось).</p>
+		</div>
+	</main>
+
+	<footer>
+		<div class="footerBlock">
+			<a href=#><img src="image/footer1.png" class="imgFooterIcon"></a>
+			<a href=#><img src="image/footer2.png" class="imgFooterIcon"></a>
+			<a href=#><img src="image/footer3.png" class="imgFooterIcon"></a>
+			<a href=#><img src="image/footer4.png" class="imgFooterIcon"></a>
+			<div class="footerText">2024</div>
+		</div>
+	</footer>
+
 </body>
+
 </html>

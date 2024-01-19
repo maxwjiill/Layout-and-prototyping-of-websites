@@ -58,7 +58,7 @@ function createNewLine() {
     orderedListLatin.className = t3Count % 2 === 0 ? "class2" : "class1";
 
     const unorderedListRussian = document.createElement("ul");
-    unorderedListRussian.className = t3Count % 2 === 0 ? "class2" : "class1";
+    unorderedListRussian.className = t3Count % 2 === 0 ? "class22" : "class11";
     
     const currentPhrase = suffeldArray[t3Count];
 
@@ -66,11 +66,11 @@ function createNewLine() {
     listItemLatin.innerHTML = `<i>${currentPhrase.latin}</i>`;
     orderedListLatin.appendChild(listItemLatin);
 
-    // const listItemRussian = document.createElement("li");
-    // listItemRussian.innerHTML = currentPhrase.translation;
+    const listItemRussian = document.createElement("li");
+    listItemRussian.innerHTML = currentPhrase.translation;
 
-    const listItemRussian = document.createElement("ul");
-    listItemRussian.innerHTML = `\t<b>•</b> ${currentPhrase.translation}`;
+    // const listItemRussian = document.createElement("ul");
+    // listItemRussian.innerHTML = `\t<b>•</b> ${currentPhrase.translation}`;
 
     unorderedListRussian.appendChild(listItemRussian);
 

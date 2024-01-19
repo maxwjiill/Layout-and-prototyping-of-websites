@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.class1 {
+    background-color: #57e0da;
+}
+
+.class2 {
+    background-color: #6bdb7a;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#aside {
+    margin-top: 20px;
+}
+
+p{
+    margin: 0;
+}

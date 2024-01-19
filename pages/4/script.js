@@ -15,18 +15,18 @@ const phrases = [
 ];
 
 let suffeldArray = shuffleArray(phrases);
-let currentIndex = 0;
+let currentC = 0;
 let clickC = 0;
 let t3Count = 0;
 
 function randomPhrase() {
-    if (currentIndex >= suffeldArray.length) {
+    if (currentC >= suffeldArray.length) {
         alert("Фразы закончились");
         return;
     }
 
     const phraseContainer = document.getElementById("phrase-container");
-    const currentPhrase = suffeldArray[currentIndex];
+    const currentPhrase = suffeldArray[currentC];
     const newDiv = document.createElement("div");
 
     newDiv.textContent = currentPhrase.latin + " - " + currentPhrase.translation;
@@ -34,7 +34,7 @@ function randomPhrase() {
 
     phraseContainer.appendChild(newDiv);
 
-    currentIndex++;
+    currentC++;
     clickC++;
 }
 

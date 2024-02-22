@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Следы</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container" id="start-screen">
+    <h1>Добро пожаловать в игру Следы!</h1>
+    <label for="player-name">Введите ваше имя: </label>
+    <input type="text" id="player-name">
+    <div class="button-container">
+      <button onclick="startGame()">Начать</button>
+    </div>
+    <a href="../first/index.html">Играть в другую игру</a>
+  </div>
+
+  <div class="container" id="game-screen" style="display: none;">
+    <h2 id="playerGreet"></h2>
+    <h3 id="game-level"></h3>
+    <h3 class="score">Очки: <span id="score"></span></h3>
+    <div class="question" id="question"></div>
+    <div class="button-container">
+      <!-- Заменяем кнопки "Да" и "Нет" на изображения -->
+      <img class="image" src="images/duck.png" onclick="checkAnswer('duck')" />
+      <img class="image" src="images/giraffe.jpeg" onclick="checkAnswer('giraffe')" />
+      <img class="image" src="images/bear.jpeg" onclick="checkAnswer('bear')" />
+    </div>
+    <div style="margin-top: 20px;">
+      <button onclick="returnToMainMenu()">Завершить игру</button>
+    </div>
+  </div>
+
+  <div class="container" id="matching-screen" style="display: none;">
+    <h2 id="playerGreetMatching"></h2>
+    <h3 id="matching-level"></h3>
+    <h3 class="score">Очки: <span id="score-matching"></span></h3>
+    <div class="question" id="riddle"></div>
+    <div class="images-container" id="images-container"></div>
+    <div id="answer-box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="button-container">
+      <button class="button-yes" onclick="checkMatching()">Проверить ответ</button>
+    </div>
+    <div style="margin-top: 20px;">
+      <button onclick="returnToMainMenu()">Завершить игру</button>
+    </div>
+  </div>
+
+  <div class="container" id="goalie-game" style="display: none;">
+    <h2 id="playerGreetGoalie"></h2>
+    <h3 id="goalie-level"></h3>
+    <h3 class="score">Очки: <span id="score-goalie"></span></h3>
+    <div class="instructions">
+      <p>Используйте стрелки клавиатуры для движения медведя.</p>
+      <p>Загоните медведя в берлогу.</p>
+      <p>Остерегайтесь столкновения с деревьями. </p>
+      <p>При столкновении с деревом, вы проиграете.</p>
+    </div>
+    <div id="field" style="width: 600px; height: 400px; position: relative; left: 50%; transform: translateX(-50%);">
+      <!-- Преграды для уровня "goalie" -->
+      <div class="goalie-obstacle" style="top: 50px; left: 100px;">
+        <img src="images/tree.png" alt="Tree">
+      </div>
+      <div class="goalie-obstacle" style="top: 50px; left: 450px;">
+        <img src="images/tree.png" alt="Tree">
+      </div>
+      <div class="goalie-obstacle" style="top: 50px; left: 300px;">
+        <img src="images/tree.png" alt="Tree">
+      </div>
+      <div class="goalie-obstacle" style="top: 150px; left: 250px;">
+        <img src="images/tree.png" alt="Tree">
+      </div>
+      <div class="goalie-obstacle" style="top: 150px; left: 350px;">
+        <img src="images/tree.png" alt="Tree">
+      </div>
+      <div class="goalie-obstacle" style="top: 250px; left: 100px;">
+        <img src="images/tree.png" alt="Tree">
+      </div>
+      <div class="goalie-obstacle" style="top: 250px; left: 300px;">
+        <img src="images/tree.png" alt="Tree">
+      </div>
+      <div class="goalie-obstacle" style="top: 250px; left: 450px;">
+        <img src="images/tree.png" alt="Tree">
+      </div>
+      <!-- Оставшийся код для ворот и мяча -->
+      <div id="goal" style="position: absolute; width: 120px; height: 50px; background-color: #000; left: 250px; bottom: 10px; box-sizing: border-box; border: 2px solid #fff;"></div>
+      <div id="ball"></div>
+    </div>       
+    <div style="margin-top: 20px;">
+      <button onclick="returnToMainMenu()">Завершить игру</button>
+    </div>
+  </div>
+
+  <div class="container" id="end-screen" style="display: none;">
+    <h1 id="end-message"></h1>
+    <p>Ваши очки: <span id="final-score"></span></p>
+    <div id="player-scores" class="player-scores"></div>
+    <div style="margin-top: 20px;">
+      <button onclick="returnToMainMenu()">Завершить игру</button>
+    </div>
+  </div>
+  <audio id="win-sound">
+    <source src="sounds/win.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <audio id="lose-sound">
+    <source src="sounds/lose.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

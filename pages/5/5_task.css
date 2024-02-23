@@ -7,8 +7,8 @@ main {
 .content {
     position: relative;
     border: 1px solid black;
-    width: 1500px;
-    height: 700px;
+    width: 2000px;
+    height: 1000px;
 }
 
 img {
@@ -16,7 +16,7 @@ img {
 }
 
 .img_rLeg {
-    width: 14.5%;
+    /* width: 14.5%; */
 }
 
 p {

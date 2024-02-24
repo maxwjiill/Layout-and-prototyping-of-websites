@@ -74,7 +74,7 @@ function generateLevel() {
       let questionObj = level.questions[currentQuestion];
       document.getElementById('question').innerText = questionObj.question;
 
-      let imagePaths = ['images/duck.png', 'images/giraffe.jpeg', 'images/bear.jpeg', 'images/chicken.png', 'images/hz.jpeg']; // замените на ваши пути к картинкам
+      let imagePaths = ['images/duck.png', 'images/giraffe.jpeg', 'images/bear.jpeg', 'images/chicken.png', 'images/hz.jpeg'];
       shuffleArray(imagePaths);
       let answerImages = document.getElementsByClassName('image');
       for (let i = 0; i < answerImages.length; i++) {
@@ -145,7 +145,7 @@ function generateLevel() {
       if (
         (treeTop < 50 || treeLeft < 190) ||
         (treeTop > 250 || treeLeft > 310) ||
-        (treeLeft > 220 && treeLeft < 280 && treeTop > 100 && treeTop < 200) // не близко к медведю
+        (treeLeft > 220 && treeLeft < 280 && treeTop > 100 && treeTop < 200)
       ) {
         const tree = document.createElement('div');
         tree.className = 'goalie-obstacle';
@@ -172,7 +172,7 @@ function generateLevel() {
       const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
-    }
+  }
 }
   
 
